@@ -27,10 +27,7 @@ Open a pull request to the czar's repository for your branch.
 - Update your local repository with `git pull czar master`
 - Update your github account with `git push origin master`
 
-<div style="text-align: center;">
-  <br>
-  ![rocky](https://i.pinimg.com/originals/68/ac/45/68ac455a2c300d6e495b7cd84b9c2476.gif)
-  <br>
-  <br>
-  _Rinse and Repeat_
-</div>
+
+![rocky](https://i.pinimg.com/originals/68/ac/45/68ac455a2c300d6e495b7cd84b9c2476.gif)
+
+_Rinse and Repeat_
