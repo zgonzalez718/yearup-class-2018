@@ -14,7 +14,10 @@ Please name your submission branches with the following format: `<week>_<day>_<t
 
 - Make sure you're on the `master` branch (`git checkout master`)
 - Create a branch for your submission, e.g `git checkout -b w3_d1_morning exercise`
-- Add and commit your changes
+- Create a folder to hold your files for each exercise:
+  - For a morning exercise in day 1 of week 3: `w03/d01/morning_exercise`
+  - Make your `index.html` within that directory
+- Add and commit your changes as you work
 - Push to your branch e.g `git push origin w03_d01_morning exercise`
 
 ## Submitting Your Work
