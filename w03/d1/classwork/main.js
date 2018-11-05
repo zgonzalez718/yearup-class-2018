@@ -30,6 +30,7 @@ let running = true;
 function toggleClock(){
 	alert('Why did you do that?! 🤦‍♂️');
 	if (running){
+		
 		clearInterval(intervalId);
 		running = false;
 	} else {
