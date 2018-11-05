@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h2 {
+  line-height: 90vh;
+  text-align: center;
+}
+
+#button {
+  border: 1px solid black;
+  width: 100px;
+  margin: auto;
+  padding: 5px;
+  background-color: rebeccapurple;
+  color: white;
+  cursor: pointer;
+}
