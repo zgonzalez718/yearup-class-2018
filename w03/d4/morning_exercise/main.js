@@ -9,10 +9,14 @@ const quotes = [
 ];
 
 function randomQuote(){
+let quoteElement = document.getElementById("quote");
+
+let randomNumber = quotes[Math.floor(Math.random()*quotes.length)];
+quoteElement.innerHTML = quotes[randomNumber];
 
 }
 
 let button = document.querySelector('button');
 button.addEventListener('click', randomQuote);
 
-// randomQuote();
+randomQuote();
