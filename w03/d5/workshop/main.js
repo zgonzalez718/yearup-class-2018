@@ -7,3 +7,10 @@ class Art {
     //do things to the DOM here
   }
 }
+
+class Classical extends Art {
+  constructor(){
+    super();
+  }
+
+}
