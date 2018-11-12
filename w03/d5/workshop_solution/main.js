@@ -4,12 +4,17 @@ class Classic {
     this.frame = "black-border";
     this.container = document.querySelector("#art");
     this.element = document.createElement("img");
+    this.element.addEventListener("click", this.remove.bind(this));
   }
 
   render(){
     this.element.src = this.art_url;
     this.element.className = this.frame;
     this.container.appendChild(this.element);
+  }
+
+  remove(){
+    this.container.removeChild(this.element);
   }
 
 }
