@@ -2,19 +2,26 @@ class Classic {
   constructor(art_url){
     this.art_url = art_url;
     this.frame = "black-border";
+  }
+
+  putImageOntoPage(){
+    //select where to put the image
     this.container = document.querySelector("#art");
-    this.element = document.createElement("img");
-    this.element.addEventListener("click", this.remove.bind(this));
+    // create a image tag
+    this.imgTag = document.createElement("img");
+    // change the src to the url  <img src="" />
+    this.imgTag.src = this.art_url;
+    // add a classname for the border
+    this.imgTag.className = this.frame;
+    //append the img tag to the div
+    console.log(this.imgTag)
+    this.container.appendChild(this.imgTag);
+
+    this.imgTag.addEventListener('click', this.removeMyself.bind(this));
   }
 
-  render(){
-    this.element.src = this.art_url;
-    this.element.className = this.frame;
-    this.container.appendChild(this.element);
-  }
-
-  remove(){
-    this.container.removeChild(this.element);
+  removeMyself(){
+    this.container.removeChild(this.imgTag);
   }
 
 }
@@ -27,10 +34,10 @@ class Meme extends Classic {
 }
 
 let art1 = new Classic("http://simpleabstract.com/assets/images/Oil-On-Canvas-Abstract-Art.jpg");
-art1.render();
+art1.putImageOntoPage();
 var meme1 = new Meme("https://www.ecolutionhome.com/wp-content/uploads/2018/02/C-Cooking-Memes-1.png")
-meme1.render();
-let art2 = new Classic("http://simpleabstract.com/assets/images/Oil-On-Canvas-Abstract-Art.jpg");
-art2.render();
-var meme2 = new Meme("https://www.ecolutionhome.com/wp-content/uploads/2018/02/C-Cooking-Memes-1.png")
-meme2.render();
+meme1.putImageOntoPage();
+let art2 = new Classic("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/687px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg");
+art2.putImageOntoPage();
+var meme2 = new Meme("https://images-na.ssl-images-amazon.com/images/I/71-6GzgQMkL._SX425_.jpg")
+meme2.putImageOntoPage();
