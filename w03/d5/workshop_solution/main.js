@@ -6,7 +6,7 @@ class Classic {
 
   putImageOntoPage(){
     //select where to put the image
-    this.container = document.querySelector("#art");
+    this.container = document.querySelector("body");
     // create a image tag
     this.imgTag = document.createElement("img");
     // change the src to the url  <img src="" />
