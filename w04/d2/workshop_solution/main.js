@@ -11,7 +11,7 @@ class Product {
     this.element.className = 'product';
   }
 
-  renderProduct(){
+  potato(){
 
     //an image for the product, appended to the div we made
     let tempImg = document.createElement('img');
@@ -28,14 +28,27 @@ class Product {
   }
 }
 
+//use axios to get data
 axios.get('https://fizal.me/products.json')
   .then(putProducts);
 
+let products = []
+
+//axios uses this to handle the data
 function putProducts(response){
+  //use a for loop to go through the products
   for (let index = 0; index < response.data.products.length; index++) {
+
     const productData = response.data.products[index];
+
+    //i use the data from the api to make a Prodcut object
     let productObject = new Product(productData.images[0].src, productData.title);
-    productObject.renderProduct();
+
+    //puting the product object in an array;
+    products.push(productObject);
+
+    //this method/function actually does the DOM stuff to put it on the page
+    productObject.potato();
 
   }
 }
