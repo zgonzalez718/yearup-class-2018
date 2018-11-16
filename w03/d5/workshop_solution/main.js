@@ -2,7 +2,12 @@ class Classic {
   constructor(art_url){
     this.art_url = art_url;
     this.frame = "black-border";
+    this.removeMyself = () => {
+      this.container.removeChild(this.imgTag);
+    }
   }
+
+
 
   putImageOntoPage(){
     //select where to put the image
@@ -17,12 +22,10 @@ class Classic {
     console.log(this.imgTag)
     this.container.appendChild(this.imgTag);
 
-    this.imgTag.addEventListener('click', this.removeMyself.bind(this));
+    this.imgTag.addEventListener('click', this.removeMyself);
   }
 
-  removeMyself(){
-    this.container.removeChild(this.imgTag);
-  }
+
 
 }
 
