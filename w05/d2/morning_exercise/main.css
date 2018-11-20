@@ -1,0 +1,12 @@
+h1{
+  background: #EB5757;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background: #303030;
+  font-family: 'Roboto', sans-serif;
+}
+@media only screen and (min-width : 600px) {
+
+}
