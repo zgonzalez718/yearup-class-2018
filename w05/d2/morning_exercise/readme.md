@@ -14,6 +14,11 @@ He doesn’t need a working version with a server or anything, just a responsive
 ![mockup](Capture.PNG)
 
 ### Setup
+- Go to your yearup-class-2018 folder
+- Add and commit any work you might have, if you are not on the master branch.
+- Make sure you switch to your master branch: `git checkout master`
+- Pull from czar master: `git pull czar master`
+- Make a branch for today's work: `git checkout -b w5_d2_workshop`
 - For this exercise you should  definitely use a grid system to make things easier. (Bootstrap recommended, [however feel free to be adventurous and pick another if you'd like](https://github.com/troxler/awesome-css-frameworks))
 - The font to be used is Open Sans and Roboto for the heading and body text respectively. https://fonts.google.com/?selection.family=Open+Sans|Roboto
 - The background color is #303030    .
