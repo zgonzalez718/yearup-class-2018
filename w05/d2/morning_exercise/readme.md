@@ -1,4 +1,3 @@
-# Day 20:
 ## Just Mockery
 ### Goal
 To implement a web page off of a design mock.
