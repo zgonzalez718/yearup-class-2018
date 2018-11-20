@@ -40,3 +40,7 @@ He doesn’t need a working version with a server or anything, just a responsive
   - utilizes a css grid framework.
   - has a fixed header.
 - Group review session with the instructor.
+
+### Submission
+
+Please open a pull request against my repository after pushing to your branch on github.
