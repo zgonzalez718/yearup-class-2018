@@ -11,7 +11,7 @@ class Product {
     this.element.className = 'product';
   }
 
-  potato(){
+  display(){
 
     //an image for the product, appended to the div we made
     let tempImg = document.createElement('img');
@@ -48,7 +48,7 @@ function putProducts(response){
     products.push(productObject);
 
     //this method/function actually does the DOM stuff to put it on the page
-    productObject.potato();
+    productObject.display();
 
   }
 }
