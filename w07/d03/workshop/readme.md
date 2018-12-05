@@ -16,7 +16,8 @@ Initially it was used to just store records. However things started to go awry a
 
 Kimmy could really use your help fixing this program so those two functions work as expected.
 ### Setup
-* bundle install inside of that directory. This makes sure your computer has  the two dependencies Kimmy used: `faker` and `pry`. Kimmy uses faker to generate fake users since she can’t show you the students’ actual records.
+* `bundle install` inside of that directory. This makes sure your computer has  the two dependencies Kimmy used: `faker` and `pry`. Kimmy uses faker to generate fake users since she can’t show you the students’ actual records.
+* If bundle does not work maybe you need to install it with `sudo gem install bundler`. If it doesn't work after that, try `sudo bundle install`.
 * You can run the program by using `bundle exec pry -r ./app.rb`. Don’t forget that after any file changes you need to restart pry.
 ### Instructions
 * Your first task is to start figuring out what each part of Kimmy’s program does. It seems as though she didn’t leave many comments while working on it. Try to use each class in the pry repl and put a few comments in the appropriate file about what it does or what information it holds. Eg: “Student: takes in a name and age as the constructor. Contains an instance of Reportcard.”
