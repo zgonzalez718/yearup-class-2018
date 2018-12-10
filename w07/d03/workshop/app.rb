@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'faker'
 require './student'
 require './classroom'
@@ -32,30 +33,31 @@ end
   @D.addStudent(genStudent())
 end
 
-# Check the rosters
-# @A.roster
-# puts ""
-# @B.roster
-# puts ""
-# @C.roster
-# puts ""
-# @D.roster
-# puts ""
+Check the rosters
+@A.roster
+puts ""
+@B.roster
+puts ""
+@C.roster
+puts ""
+@D.roster
+puts ""
 
 
 ############################################################
 # CHALLENGE 1
 
-# def findFailing(classroom)
-#   classroom.students.each { |key,value|
-#     total = 0
-#     value.reportard.grades.each do |key, value|
-#       total = total + value.grade
-#     end
-#     if total > 200:
-#       puts "PASS"
-#   }
-# end
+def findFailing(classroom)
+  classroom.students.each { |key,value|
+    total = 0
+    value.reportard.grades.each do |key, value|
+      total = total + value.grade
+    end
+    if total > 200
+      puts "PASS"
+    end
+  }
+end
 
 # findFailing @A
 
